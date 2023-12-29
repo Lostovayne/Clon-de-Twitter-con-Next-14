@@ -15,7 +15,7 @@ export const Sidebar = () => {
                 {dataSidebar.map((item) => (
                     <li
                         key={item.name}
-                        className={`flex mb-1 items-center w-max cursor-pointer list-none hover:bg-gray-300/60  dark:hover:bg-gray-500/20 text-xl  gap-5 pl-4 pr-5 py-2.5 rounded-3xl transition-all ${
+                        className={`flex mb-1 items-center w-max cursor-pointer list-none hover:bg-gray-300/30  dark:hover:bg-gray-500/20 text-xl  gap-5 pl-4 pr-5 py-2.5 rounded-3xl transition-all ${
                             item.selected ? "font-semibold" : ""
                         }`}
                     >

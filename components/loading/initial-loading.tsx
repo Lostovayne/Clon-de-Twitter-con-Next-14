@@ -6,6 +6,10 @@ import { Sidebar } from "../sidebar";
 import { RiLoader2Line } from "react-icons/ri";
 import { HeaderPosts } from "../section-posts/header-posts";
 import { PublishPosts } from "../section-posts/publish-posts";
+import { Suscripcion } from "../section-tendencias/suscripcion";
+import { Article } from "../section-tendencias/article";
+import { CardTendencia } from "../section-tendencias/card-tendencia";
+import { Tendencias } from "../section-tendencias/tendencias";
 
 export const InitialLoading = () => {
     const [loading, setLoading] = useState(true);
@@ -25,18 +29,22 @@ export const InitialLoading = () => {
                 !loading && " opacity-100 "
             }`}
         >
-            <div className="col-span-1 hidden md:block">
+            <section className="col-span-1 hidden md:block">
                 <Sidebar />
-            </div>
+            </section>
 
-            <div className="col-span-2 min-h-svh w-full border-r border-gray-500/20 xl:min-h-screen">
+            <section className="col-span-2 min-h-svh w-full border-r border-gray-500/20 xl:min-h-screen">
                 <HeaderPosts />
                 <PublishPosts />
-            </div>
+            </section>
 
-            <div className="col-span-1 hidden min-h-svh justify-end p-3 pt-4 md:flex xl:min-h-screen">
-                <ModeToggle />
-            </div>
+            <section className="col-span-1 hidden min-h-svh items-end pl-5 pt-4 md:flex md:flex-col xl:min-h-screen xl:min-w-64">
+                <Article className="flex w-full flex-col items-end gap-6">
+                    <ModeToggle />
+                    <Suscripcion />
+                    <Tendencias />
+                </Article>
+            </section>
         </div>
     );
 };
