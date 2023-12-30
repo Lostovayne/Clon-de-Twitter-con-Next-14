@@ -17,6 +17,7 @@ export function DialogPost() {
             <DialogTrigger asChild>
                 <Button
                     variant="default"
+                    size={"lg"}
                     className="mt-2 min-w-full rounded-full bg-[#1D9BF0] text-white hover:bg-[#1D9BF0]/90"
                 >
                     Postear

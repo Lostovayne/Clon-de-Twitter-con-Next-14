@@ -12,6 +12,7 @@ export const Suscripcion = () => {
             </p>
             <Button
                 variant="default"
+                size={"sm"}
                 className="rounded-full bg-[#1D9BF0] font-bold text-white hover:bg-[#1D9BF0]/90"
             >
                 Suscribirse
