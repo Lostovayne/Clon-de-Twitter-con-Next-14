@@ -1,6 +1,12 @@
 # Clon de Twitter
 
+
+## Ruta del Proyecto 
+
+El proyecto tiene esta pensado para ser ejecutado en un entorno de desarrollo , implemendando los server actions de Next 14 junto a prisma y tailwind. Para lograr buenos estilos al mismo tiempo que una coneccion directa con la base de datos. 
+
 Este es un clon de Twitter creado utilizando las siguientes tecnologías:
+
 
 - Tailwind CSS: un framework de CSS utilitario que permite una fácil personalización y diseño receptivo.
 - TypeScript: un lenguaje de programación que agrega tipos estáticos opcionales a JavaScript, lo que mejora la calidad y la mantenibilidad del código.
@@ -43,6 +49,26 @@ Siga estos pasos para configurar y ejecutar el clon de Twitter:
    npm run dev
    ```
 - La aplicación estará disponible en http://localhost:3000.
+
+
+
+## Features
+
+-  Crear sistema de autenticacion, falta definir proovedores 
+- 🌎 Next.js 14: Crea una aplicación web de React para tu proyecto.
+- 🎨 ShadCn: Crea una aplicación web de React para tu proyecto usando Shadcn.
+
+- 🐳 Docker: Utiliza Docker para facilitar la creación y gestión de contenedores para tu proyecto.
+- 🥇 Prisma: Integra Prisma como una capa de abstracción de la base de datos para facilitar el acceso y la manipulación de los datos.
+- 📂 PostgreSQL 15: Utiliza PostgreSQL 15 como tu sistema de gestión de base de datos para almacenar los datos de tu proyecto.
+- 🔗 Relaciones: Crea las relaciones necesarias entre las tablas de tu base de datos para establecer las conexiones lógicas entre los datos.
+
+- Queda como algo futuro agregar testing 
+
+¡Estos son solo algunos de los features que puedes añadir a tu proyecto! Si tienes alguna pregunta específica sobre cómo implementar alguno de ellos, no dudes en preguntar.
+
+
+
 
 Contribución
 Si desea contribuir a este proyecto, siga estos pasos:

@@ -13,7 +13,7 @@ export interface PropsPosts {
     id: number;
 }
 
-export const getPosts = (): PropsPosts[] => [
+export const getPosts = [
     {
         user: {
             name: "Eysler Jimenez",
@@ -38,7 +38,7 @@ export const getPosts = (): PropsPosts[] => [
         likes: 10,
         comments: 5,
         shares: 2,
-        id: 1,
+        id: 2,
     },
     {
         user: {
@@ -51,58 +51,6 @@ export const getPosts = (): PropsPosts[] => [
         likes: 10,
         comments: 5,
         shares: 2,
-        id: 1,
-    },
-    {
-        user: {
-            name: "Greg Bergé",
-            image: "https://img.freepik.com/free-photo/handsome-bearded-man-sunglasses-sitting-grass-palms-summer-vacation_231208-11209.jpg?w=2000",
-        },
-        description:
-            "🎉 New release of twc! You can now specify transient props for a specific component.",
-        image: "https://pbs.twimg.com/media/GCiIFXRbwAAC97_?format=jpg&name=large",
-        likes: 10,
-        comments: 5,
-        shares: 2,
-        id: 1,
-    },
-    {
-        user: {
-            name: "Greg Bergé",
-            image: "https://img.freepik.com/free-photo/handsome-bearded-man-sunglasses-sitting-grass-palms-summer-vacation_231208-11209.jpg?w=2000",
-        },
-        description:
-            "🎉 New release of twc! You can now specify transient props for a specific component.",
-        image: "https://pbs.twimg.com/media/GCiIFXRbwAAC97_?format=jpg&name=large",
-        likes: 10,
-        comments: 5,
-        shares: 2,
-        id: 1,
-    },
-    {
-        user: {
-            name: "Greg Bergé",
-            image: "https://img.freepik.com/free-photo/handsome-bearded-man-sunglasses-sitting-grass-palms-summer-vacation_231208-11209.jpg?w=2000",
-        },
-        description:
-            "🎉 New release of twc! You can now specify transient props for a specific component.",
-        image: "https://pbs.twimg.com/media/GCiIFXRbwAAC97_?format=jpg&name=large",
-        likes: 10,
-        comments: 5,
-        shares: 2,
-        id: 1,
-    },
-    {
-        user: {
-            name: "Greg Bergé",
-            image: "https://img.freepik.com/free-photo/handsome-bearded-man-sunglasses-sitting-grass-palms-summer-vacation_231208-11209.jpg?w=2000",
-        },
-        description:
-            "🎉 New release of twc! You can now specify transient props for a specific component.",
-        image: "https://pbs.twimg.com/media/GCiIFXRbwAAC97_?format=jpg&name=large",
-        likes: 10,
-        comments: 5,
-        shares: 2,
-        id: 1,
+        id: 3,
     },
 ];

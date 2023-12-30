@@ -8,13 +8,16 @@ interface Props {
 }
 
 const PostBoard = ({ posts, setPosts }: Props) => {
+    const postReverse = posts.slice().reverse();
+    console.log(postReverse);
+
     return (
         <div>
             {/* <CardPost />
             <CardPost />
             <CardPost /> */}
 
-            {posts.map((post) => (
+            {postReverse.map((post) => (
                 <CardPost key={post.id} post={post} setPosts={setPosts} />
             ))}
         </div>

@@ -17,7 +17,7 @@ import { PropsPosts, getPosts } from "@/data/data-post";
 
 export const InitialLoading = () => {
     const [loading, setLoading] = useState(true);
-    const [posts, setPosts] = useState<PropsPosts[]>(getPosts());
+    const [posts, setPosts] = useState<PropsPosts[]>(getPosts);
 
     // todo:  Loading de carga principal
     setTimeout(() => {
