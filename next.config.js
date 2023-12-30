@@ -7,6 +7,21 @@ const nextConfig = {
                 hostname: "img.freepik.com",
                 port: "",
             },
+            {
+                protocol: "https",
+                hostname: "pbs.twimg.com",
+                port: "",
+            },
+            {
+                protocol: "https",
+                hostname: "localhost",
+                port: "",
+            },
+            {
+                protocol: "https",
+                hostname: "pbs.twimg.com",
+                port: "",
+            },
         ],
     },
 };
