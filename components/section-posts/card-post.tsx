@@ -36,7 +36,7 @@ export const CardPost = ({ post, setPosts }: any) => {
 
             {
                 // todo:  Imagen
-                !post.image.toString().includes("localhost") ? (
+                !post.image.toString().includes("localhost") && post.image !== "" ? (
                     <div className="cursor-pointer">
                         <Image
                             src={post.image}
