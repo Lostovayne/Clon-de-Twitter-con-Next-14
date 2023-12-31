@@ -43,7 +43,7 @@ export const CardPost = ({ post, setPosts }: any) => {
                             alt=""
                             width={400}
                             height={400}
-                            className="ml-14 mt-2 max-xl:max-w-48"
+                            className="ml-14 mt-2 rounded-md max-xl:max-w-48"
                         />
                     </div>
                 ) : (
