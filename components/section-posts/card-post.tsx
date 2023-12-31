@@ -3,7 +3,6 @@ import Image from "next/image";
 import { RiMoreFill } from "react-icons/ri";
 
 export const CardPost = ({ post, setPosts }: any) => {
-    // console.log(post.image.toString());
     return (
         <div className="border border-gray-500/20 p-5 transition-all">
             <header className="">
@@ -34,22 +33,19 @@ export const CardPost = ({ post, setPosts }: any) => {
                 </div>
             </header>
 
-            {
-                // todo:  Imagen
-                !post.image.toString().includes("localhost") && post.image !== "" ? (
-                    <div className="cursor-pointer">
-                        <Image
-                            src={post.image}
-                            alt=""
-                            width={400}
-                            height={400}
-                            className="ml-14 mt-2 max-xl:max-w-48"
-                        />
-                    </div>
-                ) : (
-                    " "
-                )
-            }
+            {!post.image.toString().includes("localhost") && post.image !== "" ? (
+                <div className="cursor-pointer">
+                    <Image
+                        src={post.image}
+                        alt=""
+                        width={400}
+                        height={400}
+                        className="ml-14 mt-2 rounded-md max-xl:max-w-48"
+                    />
+                </div>
+            ) : (
+                " "
+            )}
 
             <footer></footer>
         </div>
