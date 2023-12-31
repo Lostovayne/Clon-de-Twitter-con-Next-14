@@ -26,7 +26,7 @@ export const DataTendencias = [
     },
     {
         CountryTrend: "Tendencia en Chile",
-        title: "Trans",
+        title: "@Devtalles",
         subtext: "221 mil posts",
         id: 4,
     },

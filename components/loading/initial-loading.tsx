@@ -1,25 +1,23 @@
 "use client";
 
-import { useState } from "react";
-import { ModeToggle } from "../conmutador";
-import { Sidebar } from "../sidebar";
-import { RiLoader2Line } from "react-icons/ri";
-import { HeaderPosts } from "../section-posts/header-posts";
-import { PublishPosts } from "../section-posts/publish-posts";
-import { Suscripcion } from "../section-tendencias/suscripcion";
-import { Article } from "../section-tendencias/article";
-import { CardTendencia } from "../section-tendencias/card-tendencia";
-import { Tendencias } from "../section-tendencias/tendencias";
-import PostBoard from "../section-posts/post-board";
-import { Input } from "../ui/input";
-import { RiSearchLine } from "react-icons/ri";
 import { PropsPosts, getPosts } from "@/data/data-post";
+import { useState } from "react";
+import { RiLoader2Line, RiSearchLine } from "react-icons/ri";
+import { ModeToggle } from "../conmutador";
+import { HeaderPosts } from "../section-posts/header-posts";
+import PostBoard from "../section-posts/post-board";
+import { PublishPosts } from "../section-posts/publish-posts";
+import { Article } from "../section-tendencias/article";
+import { Suscripcion } from "../section-tendencias/suscripcion";
+import { Tendencias } from "../section-tendencias/tendencias";
+import { Sidebar } from "../sidebar";
+import { Input } from "../ui/input";
 
-export const InitialLoading = () => {
+const InitialLoading = () => {
     const [loading, setLoading] = useState(true);
     const [posts, setPosts] = useState<PropsPosts[]>(getPosts);
 
-    // todo:  Loading de carga principal
+    // // todo:  Loading de carga principal
     setTimeout(() => {
         setLoading(false);
     }, 1500);
@@ -62,3 +60,5 @@ export const InitialLoading = () => {
         </div>
     );
 };
+
+export default InitialLoading;

@@ -1,4 +1,3 @@
-"use client";
 import { RiImage2Line } from "react-icons/ri";
 import { RiFileGifLine } from "react-icons/ri";
 import { RiListRadio } from "react-icons/ri";
@@ -11,19 +10,19 @@ interface Props {
     setImage: (image: any) => void;
 }
 
-export const IconsPublish = ({ setImage }: Props) => {
-    const InputRef = useRef(null);
+export const IconsPublish = ({ setImage }: Props): JSX.Element => {
+    const InputRef = useRef<HTMLInputElement | null>(null);
 
     const handleClick = (): void => {
         InputRef.current?.click();
     };
 
-    const handleImageChange = () => {
-        const file = InputRef.current?.files[0]; // Obtener el archivo seleccionado
+    const handleImageChange = (): void => {
+        const file = InputRef.current?.files?.[0]; // Obtener el archivo seleccionado
 
         if (file) {
             const reader = new FileReader();
-            reader.onload = () => {
+            reader.onload = (): void => {
                 setImage(reader.result);
             };
 

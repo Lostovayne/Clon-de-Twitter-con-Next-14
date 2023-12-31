@@ -1,4 +1,4 @@
-import { InitialLoading } from "@/components/loading";
+import InitialLoading from "@/components/loading/initial-loading";
 
 export default function HomePage() {
     return (
