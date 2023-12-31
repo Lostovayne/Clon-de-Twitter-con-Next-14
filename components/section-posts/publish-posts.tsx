@@ -77,7 +77,7 @@ export const PublishPosts = () => {
                         </div>
                     )}
 
-                    <div className="flex items-end justify-between">
+                    <div className="flex items-center justify-between">
                         <IconsPublish setImage={setImage} />
                         <Button
                             onClick={handleSubmit}
