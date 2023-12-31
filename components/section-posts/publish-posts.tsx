@@ -39,7 +39,6 @@ export const PublishPosts = () => {
         };
 
         getPosts.push(newPost);
-        console.log(getPosts);
         setDataForm({ textArea: "", imagen: "" });
         setImage("");
         router.refresh();
@@ -61,7 +60,7 @@ export const PublishPosts = () => {
                         name="textArea"
                         onChange={(e) => setDataForm({ ...dataForm, textArea: e.target.value })}
                         value={dataForm.textArea || ""}
-                        className="min-h-20 resize-none border-none text-base placeholder:text-xl placeholder:text-gray-500/80"
+                        className="min-h-20 resize-none border-none text-base placeholder:text-sm placeholder:text-gray-500/80 md:placeholder:text-lg xl:placeholder:text-xl"
                         placeholder="¿Qué estás pensando?"
                         aria-label="¿Que estas pensando?"
                     />
@@ -84,6 +83,7 @@ export const PublishPosts = () => {
                             onClick={handleSubmit}
                             type={"submit"}
                             variant="default"
+                            disabled={dataForm.textArea.length > 2 || image !== "" ? false : true}
                             className="rounded-full bg-[#1D9BF0] font-bold text-white hover:bg-[#1D9BF0]/90"
                         >
                             Postear
